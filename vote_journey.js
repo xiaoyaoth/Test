@@ -12,6 +12,13 @@ tpv(268,1);
 var waitTime = 30000 + Math.round(Math.random() * 1000);
 console.log(waitTime);
 
+var result = document.getElementById('vid_21');
+var rank = result.parentNode;
+rank = rank.childNodes[1].childNodes[0];
+console.log(result.innerHTML);
+console.log(rank.innerHTML);
+document.title = rank.innerHTML + '名 ' + result.innerHTML;
+
 setInterval(function () {
     window.location.reload();
 }, waitTime);
